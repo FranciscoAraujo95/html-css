@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outras formatações</title>
+  </head>
+  <body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>
+      <!-- A tag code transforma o texto para uma tipografia monoespaçada, para facilitar na leitura -->
+      O comando <code>document.getElementById('teste')</code> é escrito em
+      linguagem JavaScript.
+    </p>
+    <!-- A tag pre faz com que o html respeite a forma com que o pedaço de código foi escrito dentro da tag code, organizando exatamente da forma que está, na sua página. -->
+    <pre>
+      <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0;
+      print(f'O número {num} é PAR')
+    else:
+      print(f'O núumerp {num} é IMPAR''')
+    print('Fim do programa')
+      </code>
+    </pre>
+    <p>
+      <sub><em>Exemplo de código em linguagem Python &Delta;</em></sub>
+    </p>
+
+    <br />
+
+    <h2>Citações simples</h2>
+    <!-- A tag q adiciona automáticamente as aspas, importante para dar sentido e semântica -->
+    <p>
+      Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q>
+    </p>
+
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <!-- A tag blockquote transforma esse pedaço de texto numa citação, já o afasta pro lado como tem que ser -->
+    <blockquote
+      cite="https://www.google.com.br/books/edition/_/ZyJyDwAAQBAJ?hl=pt-BR&gbpv=1&pg=PP1&dq=html5"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam
+      velit consectetur maxime vitae voluptatum iure magni tenetur molestias
+      possimus totam laborum voluptate quaerat sit?
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>
+      <!-- A tag abbr permite colocarmos o texto suspenso que vai aparecer quando você repousar o mouse em cima de uma sigla, por exemplo. -->
+      Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e
+      <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!
+    </p>
+
+    <h2>Texto invertido</h2>
+    <!-- Uma tag meio inútil que inverte o texto, as opções são rtl e ltr -->
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+  </body>
+</html>

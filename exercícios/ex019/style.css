@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e49ceb;
+  width: 800px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #5b1d61;
+}
+
+#principal {
+  background-image: linear-gradient(to right, #df47ed, #76267e);
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  color: #76267e;
+}
+
+.basico {
+  color: #267e32;
+}
+
+.intermediario {
+  color: #7d7e26;
+}
+
+.avancado {
+  color: #7e2626;
+}
+
+.destaque {
+  background-color: #969649a8;
+}

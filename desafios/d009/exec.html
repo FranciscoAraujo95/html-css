@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        background-image: linear-gradient(to right, #13678a, #45c4b0);
+        color: #fff;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+      }
+
+      h1 {
+        font-family: 'Poppins';
+        font-size: 3rem;
+        position: absolute;
+        top: 20px;
+        text-shadow: 3px 3px 3px #1c50477e;
+
+        z-index: 99;
+      }
+
+      h2,
+      p {
+        color: #13678a;
+        padding: 20px;
+      }
+
+      h2 {
+        text-shadow: 2px 2px 3px #1c50477e;
+        text-align: left;
+      }
+
+      p {
+        text-align: justify;
+        width: 400px;
+      }
+
+      .parent {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background-color: #fff;
+        box-shadow: 5px 5px 3px #1c50477e;
+        border-radius: 15px;
+
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+      }
+
+      .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .child {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 15%);
+        width: 400px;
+        height: 200px;
+        background-image: linear-gradient(260deg, #13678a, #45c4b0);
+        box-shadow: 5px 5px 3px #b6b6b67e;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .child h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercício Flexbox</h1>
+    <div class="parent">
+      <div class="texto">
+        <h2>Teste de Flexbox</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+          distinctio, natus velit, doloremque nesciunt necessitatibus facilis
+          voluptatem pariatur accusamus iusto perferendis quis sint fugiat ad
+          minus expedita! Commodi, accusantium odio.
+        </p>
+      </div>
+      <div class="child">
+        <h1>Francisco Araújo</h1>
+      </div>
+    </div>
+  </body>
+</html>

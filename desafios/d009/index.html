@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos em Vídeo</title>
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: 'Poppins';
+        background-color: rgb(68, 68, 68);
+        color: #fff;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .titulo {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      .parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+      }
+      .child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 230px;
+        width: 420px;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="titulo">
+      <h1>Vídeos legais para assistir</h1>
+    </div>
+    <div class="parent">
+      <div class="child">
+        <a href="hd.html"
+          ><img
+            src="imagens/thumb-hardware.png"
+            alt="foto curso thumb-hardware"
+        /></a>
+        <a href="ht.html"
+          ><img src="imagens/thumb-html.png" alt="foto curso html"
+        /></a>
+        <a href="js.html"
+          ><img src="imagens/thumb-js.png" alt="foto curso js"
+        /></a>
+        <a href="py.html"
+          ><img src="imagens/thumb-python.png" alt="foto curso python"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>

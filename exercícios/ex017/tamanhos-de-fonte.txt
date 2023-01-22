@@ -1,0 +1,26 @@
+Medidas absolutas
+cm, mm, px, pt, pc
+
+Mediadas Relativas
+em, ex, rem, vw, vh, %
+16px geralmente = 1em
+
+
+PESO, ESTILO E SHORTHAND EM FONTES
+
+font-family: 'Work Sans', sans-serif;
+font-weight: bold; --> Negrito
+font-style: italic; --> Itálico
+text-decoration: underline; --> Sublinhado
+
+Shorthanf font - ordem de escrita do código
+
+-font-style -> font-weight -> font-size -> font-family.
+
+font: italic bold 3em 'Work Sans', sans-serif;
+
+No lugar de codar 4 linhas, codamos apenas uma e obtivemos o mesmo resultado.
+
+
+
+

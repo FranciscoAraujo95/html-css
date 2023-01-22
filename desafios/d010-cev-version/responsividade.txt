@@ -1,0 +1,24 @@
+O tamanho ideal para a largura do conteúdo principal do site é de cerca de 1200px, a partir disso precisamos adaptar para não ficar cansativo pro usuário.
+
+COMO DEIXAR UM VÍDEO RESPONSIVO.
+
+1. Envelopar o iframde dentro de uma div e definir uma classe pra facilitar de ffalar com ela
+
+div.video {
+  background-color: var(--cor5);
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom: 56.5%;
+  position: relative;
+}
+
+div.video iframe {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.288);
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+Esse código deixa o vídeo responsivo, é meio que uma gambiarra mas funciona

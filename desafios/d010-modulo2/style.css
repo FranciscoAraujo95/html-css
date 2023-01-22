@@ -1,0 +1,263 @@
+@font-face {
+  font-family: 'idroid';
+  src: url(projeto/fontes/idroid.otf) format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color1: #c5ebd6;
+  --color2: #83e1ad;
+  --color3: #3ddc84;
+  --color4: #2fa866;
+  --color5: #063d1e;
+
+  --white: #fff;
+
+  --font-titulo: 'Bebas Neue';
+}
+
+body {
+  background-color: var(--color2);
+}
+
+body p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2;
+  text-align: justify;
+  text-indent: 3em;
+  margin: 20px 0px 20px 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: var(--sombra);
+}
+
+#irina {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+}
+
+.robos img {
+  margin: auto;
+}
+
+nav {
+  background-image: linear-gradient(to bottom, var(--color3), var(--color5));
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+}
+
+#bebas {
+  font-family: var(--font-titulo);
+  font-size: 3.5em;
+  font-weight: lighter;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+  text-align: center;
+  color: var(--white);
+}
+
+.gradient-box {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color5),
+    var(--color3),
+    var(--color5)
+  );
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color3),
+    var(--color5)
+  );
+}
+
+h2 {
+  padding-left: 10px;
+  font-family: 'idroid', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 3.3em;
+  text-align: center;
+  color: var(--color4);
+}
+
+h3 {
+  padding-left: 10px;
+  font-family: 'idroid', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 2.5em;
+  color: var(--color4);
+}
+
+.bgc-h2 {
+  background-image: linear-gradient(to right, var(--color1), #fff);
+  border-radius: 10px;
+}
+
+nav p {
+  text-align: center;
+  color: var(--white);
+
+  width: 400px;
+  margin: auto;
+}
+
+.destaque-verde {
+  color: var(--color4);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.destaque-verde:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.destaque-branco {
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li a {
+  color: var(--white);
+  font-size: 0.875em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: var(--white);
+  height: 100%;
+  width: 60vw;
+  margin: auto;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+}
+
+article {
+  padding: 20px;
+}
+
+article h2 {
+  margin-bottom: 0.2em;
+}
+
+.section-verde {
+  width: 100%;
+  height: 620px;
+  background-color: var(--color5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 2em;
+  background-color: var(--color5);
+  padding: 10px;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  text-align: center;
+
+  color: var(--white);
+}
+
+iframe {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+}
+
+.section-list {
+  padding: 20px;
+}
+
+.section-list h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  color: var(--white);
+  background-color: var(--color4);
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.section-list p {
+  padding: 15px;
+}
+
+.bgc-lightgreen {
+  background-color: var(--color1);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+}
+
+.list-candy {
+  padding: 20px;
+  margin-left: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-list p {
+  margin: 0px;
+}
+
+.list-candy li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.list-candy li::before {
+  content: '';
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color3),
+    var(--color4)
+  );
+  margin-right: 10px;
+  place-content: center;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+}
+
+.section-list p:last-child {
+  margin-top: 1em;
+  text-indent: 0em;
+}

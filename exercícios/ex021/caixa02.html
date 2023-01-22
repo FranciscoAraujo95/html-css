@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background-color: lightgray;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      height: 100vh;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+    }
+
+    nav {
+      background-color: rgb(133, 133, 133);
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin-right: 30px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: white;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+      border-radius: 20px 0px;
+    }
+
+    section {
+      background-color: darkgray;
+      padding: 20px;
+    }
+
+    article {
+      background-color: darkgray;
+    }
+
+    article aside {
+      background-color: lightgray;
+    }
+
+    article aside p {
+      margin-top: 10px;
+      padding: 10px;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin: 0px;
+    }
+
+    footer p {
+      padding: 10px;
+      border-radius: 20px 0px;
+    }
+
+    /* #bola {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 50%;
+    } */
+  </style>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <h2>Esportes, política e Tecnologia</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nemo ex ad
+          voluptates aliquid, unde beatae quae impedit iste quasi sint veritatis
+          voluptate blanditiis in voluptas architecto soluta eos consectetur?
+        </p>
+      </section>
+      <section id="noticias">
+        <article>
+          <h2>Novidades sobre o Brasil</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            modi? Dolor, dicta numquam iste similique, odit aliquam, itaque est
+            facilis mollitia ex recusandae necessitatibus suscipit cupiditate
+            laboriosam tenetur saepe dignissimos!
+          </p>
+          <aside>
+            <p>Artigo escrito por José da Silva</p>
+          </aside>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+
+    <div id="bola"></div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes Externas</title>
+    <style>
+      /* Font-face serve para importarmos um estilo externo baixado da internet */
+      @font-face {
+        font-family: 'Sonic Sans';
+        src: url('fonts/OldLondon.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+
+        /* 
+        Tipos de format()
+        -opentype (otf)
+        -truetype(ttf)
+        -enbedded-opentype
+        -truetype-aat (Apple advanced Typography)
+        -svg
+        */
+      }
+      body {
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to right bottom, green 25%, blue);
+      }
+      h1 {
+        font-family: 'Sonic Sans', Times, serif;
+        font-size: 6em;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Old London &trade;</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolores
+      aliquam aspernatur odit modi asperiores, ipsum sapiente repellat maxime
+      omnis delectus, ad, quisquam aperiam? Quia nisi aliquid dolores
+      voluptates. Debitis.
+    </p>
+  </body>
+</html>
