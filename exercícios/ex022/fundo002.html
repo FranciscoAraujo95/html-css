@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personalizando a imagem de fundo</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      body {
+        background-image: url(imagens/pattern001.png);
+        /* A imagem será carregada no seu tamanho padrão a menos que se defina um size */
+        background-size: 100px 100px;
+        /* Valor padrão da propriedadr */
+        background-repeat: repeat;
+        /* Não vai repetir a imagem */
+        background-repeat: no-repeat;
+        /* Vai repetir apenas no eixo X (hotizontal) */
+        background-repeat: repeat-x;
+        /* Vai repetir apenas no eixo y */
+        background-repeat: repeat-y;
+      }
+      h1 {
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Teste de aplicação de fundo</h1> -->
+  </body>
 </html>
