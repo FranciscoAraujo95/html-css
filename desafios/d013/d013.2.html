@@ -9,50 +9,44 @@
       body {
         background-color: lightgray;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
       }
 
       table {
-        background-color: white;
-        width: 400px;
+        width: 300px;
         text-align: center;
-        box-shadow: 5px 5px 0px gray;
       }
-
       td {
-        border-radius: 5px;
-        border: 2px solid black;
+        background-color: white;
+        border: 1px solid black;
         padding: 10px;
       }
     </style>
   </head>
   <body>
-    <h1>Desafio das Células Mescladas</h1>
+    <h1>Tabela com algumas células mescladas</h1>
     <table>
       <tr>
-        <td>1</td>
-        <td>2</td>
-        <td rowspan="2">3</td>
-        <td>4</td>
+        <td colspan="4">A</td>
+        <td rowspan="4">B</td>
       </tr>
       <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
+        <td rowspan="4">C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
       </tr>
       <tr>
-        <td colspan="3">8</td>
-        <td>9</td>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
       </tr>
       <tr>
-        <td rowspan="2">10</td>
-        <td colspan="2">11</td>
-        <td>12</td>
+        <td>J</td>
+        <td>K</td>
+        <td>L</td>
       </tr>
       <tr>
-        <td>13</td>
-        <td>14</td>
-        <td>15</td>
+        <td colspan="4">N</td>
       </tr>
     </table>
   </body>
