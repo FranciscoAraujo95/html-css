@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício de Tabelas</title>
+    <style>
+      body {
+        background-color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      caption {
+        padding: 10px;
+        font-size: 1.5em;
+      }
+
+      th {
+        padding: 10px;
+        background-color: gray;
+        color: white;
+        border: 1px solid black;
+      }
+
+      td {
+        padding: 5px;
+        text-align: center;
+        border: 1px solid black;
+      }
+
+      .destaque {
+        background-color: chartreuse;
+      }
+
+      .cnome {
+        background-color: chartreuse;
+      }
+
+      .amarelo {
+        background-color: yellow;
+      }
+
+      .vermelho {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+      <!-- tag utilizada para selecionar as colunas da tabela e definir os estilos necessários, pode-se definir o nome de cada classe de acordo com os dados da coluna e trabalhar as mesmas e/ou definir classes com nomes específicos de acordo com o que você quer e jogar no nome das classes ao lado da coluna -->
+      <colgroup>
+        <col class="amarelo" />
+        <col class="vermelho" span="2" />
+        <col class="amarelo" />
+      </colgroup>
+      <caption>
+        Cadastro
+      </caption>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+      </tr>
+      <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+      </tr>
+      <tr>
+        <td>José</td>
+        <td>M</td>
+        <td>45</td>
+        <td>Mecânico</td>
+      </tr>
+      <tr>
+        <td>Rafael</td>
+        <td>M</td>
+        <td>18</td>
+        <td>Padeiro</td>
+      </tr>
+      <tr>
+        <td>Joana</td>
+        <td>F</td>
+        <td>37</td>
+        <td>Costureira</td>
+      </tr>
+      <tr>
+        <td>Gilberto</td>
+        <td>M</td>
+        <td>52</td>
+        <td>Autônomo</td>
+      </tr>
+      <tr>
+        <td>Sandra Regina</td>
+        <td>F</td>
+        <td>60</td>
+        <td>Costureira</td>
+      </tr>
+    </table>
+  </body>
+</html>
