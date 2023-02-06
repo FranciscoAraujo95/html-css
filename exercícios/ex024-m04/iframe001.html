@@ -9,19 +9,52 @@
       body {
         font-family: Arial, Helvetica, sans-serif;
       }
+
+      iframe {
+        /* As configurações dentro das folhas de estilo vão sempre ser soberanas sobre as pontuais dentro das próprias tags, caso não haja nenhuma configuração, o tamanho padrão será ativado */
+        height: 400px;
+        width: 400px;
+        border: 1px dashed black;
+      }
     </style>
   </head>
   <body>
     <h1>Testando o uso de um iframe</h1>
     <p>
       Acessando o site do
-      <iframe src="https://www.cursoemvideo.com" frameborder=""></iframe>
+      <!-- Tamanho padrão do iframe = 300x150 pixels -->
+      <iframe
+        src="https://www.cursoemvideo.com"
+        frameborder="0"
+        height="500"
+        scolling="auto"
+      >
+        <!-- Esse link é pra casos onde o navegador do usuário não suporta o iframe, em vez de só colocarmos uma mensagem de erro, podemos disponibilizar um link para o site -->
+        <a
+          href="https://www.cursoemvideo.com"
+          target="
+        "
+          >Curso em Vídeo</a
+        >
+      </iframe>
       para aprender a programar.
     </p>
     <p>
       O site do
-      <iframe src="https://www.google.com.br" frameborder="0"></iframe> também é
-      muito legal.
+      <iframe
+        src="https://franciscoaraujo95.github.io/projeto-cordel"
+        frameborder="0"
+        height="500"
+        width="500"
+      >
+        <a
+          href="https://franciscoaraujo95.github.io/projeto-cordel"
+          target="_
+        "
+          >Projeto Cordel</a
+        >
+      </iframe>
+      também é bem legal!
     </p>
   </body>
 </html>
