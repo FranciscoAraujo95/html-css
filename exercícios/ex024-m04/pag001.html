@@ -8,18 +8,75 @@
     <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
-        background-image: linear-gradient(to bottom, yellow, red);
+        background-color: lightgray;
         height: 94.1vh;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th {
+        padding: 10px;
+        background-color: #222;
+        color: white;
+        border: 1px solid black;
+      }
+
+      td {
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid black;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <h1>Isso é um teste!</h1>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium sint
-      est iure reprehenderit similique ullam dignissimos dolores temporibus
-      animi nihil quae, asperiores id sit omnis ducimus beatae? Sapiente,
-      quibusdam quis.
-    </p>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Nome</th>
+          <th colspan="2">Sexo</th>
+          <th rowspan="2">Idade</th>
+        </tr>
+        <tr>
+          <th>M</th>
+          <th>F</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Francisco</td>
+          <td><input type="checkbox" name="masc" id="masc" /></td>
+          <td><input type="checkbox" name="femi" id="femi" /></td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td>Sandra</td>
+          <td><input type="checkbox" name="masc" id="masc" /></td>
+          <td><input type="checkbox" name="femi" id="femi" /></td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Gilberto</td>
+          <td><input type="checkbox" name="masc" id="masc" /></td>
+          <td><input type="checkbox" name="femi" id="femi" /></td>
+          <td>55</td>
+        </tr>
+        <tr>
+          <td>Ricardo</td>
+          <td><input type="checkbox" name="masc" id="masc" /></td>
+          <td><input type="checkbox" name="femi" id="femi" /></td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>Alana</td>
+          <td><input type="checkbox" name="masc" id="masc" /></td>
+          <td><input type="checkbox" name="femi" id="femi" /></td>
+          <td>32</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
