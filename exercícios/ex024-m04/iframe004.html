@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframes</title>
+  </head>
+  <body>
+    <h1>Eu site principal</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci totam
+      quasi officia! Cupiditate nesciunt amet ullam aliquam perspiciatis, sit,
+      vitae natus, ab eos accusamus obcaecati laboriosam. Sunt placeat ratione
+      quos!
+    </p>
+    <!-- O parâmetro sandbox faz com que o site dentro do iframe "não funcione", por exemplo nesse formulário, não está recebendo os dados do cadastro do usuário, deixando assim ele um pouco mais seguro à ataques ou softwares maliciosos -->
+    <!-- Porém, se você quiser liberar as funções pra um site específico, existem parâmetros dentro do sandbox que permitem isso, como por exemplo, o allow-same-origin, allow-forms, allow-scripts, etc -->
+    <iframe
+      src="paginas-extras/pag004.html"
+      frameborder="1"
+      sandbox="allow-forms allow-scripts allow-same-origin
+    "
+      referrerpolicy="no-referrer"
+    >
+      <p>Seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+      velit? Veritatis libero necessitatibus at nulla rem sequi vero molestiae
+      amet magni dolore alias pariatur est nemo, in delectus iusto asperiores?
+    </p>
+  </body>
+</html>
