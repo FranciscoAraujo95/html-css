@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 002</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Teste de Formulário</h1>
+    <!-- Autocomplete na tag form vai ativar as sugestões de input -->
+    <form action="" method="post" autocomplete="on">
+      <p>
+        <label for="iusu">Usuário:</label>
+        <!-- autocomplete dentro do input vai nos dar várias outras opções, username, no caso, vai sugerir preencher com os dados de login salvos na conta do usuário -->
+
+        <!-- min e max lenght vai definir a quantidade de caracteres aceitas no input -->
+        <!-- size vai definir que o camp do input vai ficar do tamanho X de caracteres que você definir -->
+        <!-- placeholder pode ser usado para aparecer uma dica dentro do input, informando o usuário o que ele deve digitar em cada campo, por exemplo -->
+        <!-- required faz com que seja obrigartório o preenchimento do campo -->
+        <input
+          autocomplete="username"
+          type="text"
+          name="usu"
+          id="iusu"
+          minlength="5"
+          maxlength="15"
+          size="15"
+          placeholder="Nome de usuário"
+          required
+        />
+      </p>
+      <!-- <p>
+        <label for="itext">CPF:</label>
+        <input
+          type="text"
+          name="text"
+          id="itext"
+          placeholder="000.000.000-00"
+        />
+      </p> -->
+      <p>
+        <label for="isen">Senha:</label>
+        <input
+          autocomplete="current-password"
+          type="password"
+          name="sen"
+          id="isen"
+          minlength="8"
+          maxlength="20"
+          size="12"
+          placeholder="Mínimo 8 letras"
+          required
+        />
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
