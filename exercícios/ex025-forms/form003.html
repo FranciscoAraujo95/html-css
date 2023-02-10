@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 003</title>
+    <style>
+      body {
+        background-color: lightgray;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Teste de Formulário</h1>
+    <form action="" method="get" autocomplete="on">
+      <p>
+        <label for="nome">Nome:</label>
+        <input
+          autocomplete="name"
+          type="text"
+          name="nome"
+          id="nome"
+          required
+          maxlength="50"
+          placeholder="Nome completo"
+        />
+      </p>
+      <p>
+        <!-- O value utilizado nesse input vai fazer com que já apareça o valor definido ali, no campo em questão, importante salientar que ele substitui o placeholder -->
+        <label for="media">Média:</label>
+        <input
+          type="number"
+          name="media"
+          id="media"
+          required
+          min="0"
+          max="10"
+          value="5"
+          placeholder="0 a 10"
+          step="0.1"
+        />
+      </p>
+      <p>
+        <label for="mes">Período Letivo:</label>
+        <input type="month" name="mes" value="2018-08" id="mes" />
+      </p>
+      <p>
+        <label for="dia">Dia da Prova:</label>
+        <input type="date" name="dia" id="dia" value="2023-02-10" />
+      </p>
+      <p>
+        <label for="hora">Horário da Prova:</label>
+        <input type="time" name="hora" id="hora" />
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
