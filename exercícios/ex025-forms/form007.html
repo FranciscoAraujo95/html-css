@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 007</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method="post" autocomplete="on">
+      <p>
+        <label for="est">Estado:</label>
+        <!-- A tag select é interessante para apresentar opções pré-definidas no input, mas você somente vai poder escolher o que você mesmo colocar como opção, não tem como digitar algo que não esteja na lista -->
+        <select name="estado" id="estado">
+          <!-- selected define o valor que vai aparecer por padrão -->
+          <option value="" selected>--- Escolha ---</option>
+          <!-- optgroup define grupos para as opções e o label define a descrição desse grupo -->
+          <optgroup label="Região Nordeste">
+            <option value="BA">Bahia</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="CE">Ceará</option>
+          </optgroup>
+
+          <optgroup label="Região Sudeste">
+            <option value="MG">Minas Gerais</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        <label for="profissao">Profissão:</label>
+        <input type="text" name="profissao" id="profissao" list="listprof" />
+        <!-- Para que apareçam as opções nesse input, é necessário definir um id à tag datalist e dentro do input, chamar o parâmetro list e passar o nome desse id em questão -->
+        <datalist id="listprof">
+          <!-- datalist também pode ser utilizado para capturar opções pré-definidas, porém nesse caso pode-se por exemplo, digitar novas opções e ainda assim enviar o formulário para o arquivo destino, já que o campo de input é um de tipo texto simples -->
+          <option value="ADM">Administrador</option>
+          <option value="CONT">Contabilista</option>
+          <option value="DEV">Desenvolvedor</option>
+          <option value="PROF">Professor</option>
+        </datalist>
+      </p>
+      <p>
+        <!-- Para utilizar o textarea é interessante utilizar o método post, por conta do limite de dados do método get -->
+        <label for="msg">Mensagem: </label> <br />
+        <textarea
+          name="msg"
+          id="msg"
+          cols="50"
+          rows="10"
+          placeholder="Sua mensagem aqui..."
+        ></textarea>
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
