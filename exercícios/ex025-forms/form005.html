@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 005</title>
+    <style>
+      body {
+        background-color: lightgray;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      fieldset {
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method="get" autocomplete="on">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            autocomplete="name"
+            required
+          />
+        </p>
+        <p>
+          <label for="idade">Idade:</label>
+          <input type="number" name="idade" id="idade" required />
+        </p>
+      </fieldset>
+      <fieldset>
+        <!-- Nos inputs do tipo radio, geralmente se quer marcar apenas uma opção, pra que isso possa ocorrer, devemos definir o mesmo nome para os inputs. Não funciona com os inputs do tipo checkbox -->
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="masc" value="M" />
+        <label for="masc">Masculino</label> <br />
+        <input type="radio" name="sexo" id="femi" value="F" checked />
+        <label for="femi">Feminino</label>
+      </fieldset>
+      <fieldset>
+        <!-- Caso queira que algum input já apareca marcado use o parâmetro "checked" no mesmo -->
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="fut" id="fut" checked />
+        <label for="fut">Futebol</label> <br />
+        <input type="checkbox" name="bas" id="bas" />
+        <label for="bas">Basquete</label> <br />
+        <input type="checkbox" name="nat" id="nat" />
+        <label for="nat">Natação</label> <br />
+        <input type="checkbox" name="cor" id="cor" />
+        <label for="cor">Corrida</label> <br />
+      </fieldset>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
