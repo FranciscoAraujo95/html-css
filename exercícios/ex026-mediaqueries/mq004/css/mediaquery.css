@@ -12,6 +12,19 @@ Grandes telas: acima de 1200px
 IMPORTANTE --> Esses Breakpoints eram os ideais recomendados pela W3C no momento do lançamento do curso, hoje me dia os valores podem ter mudado, faça uma pesquisa sobre
 */
 
+/* BREAKPOINTS recomendados em 2023 são
+
+Mobile: 360 x 640.
+Mobile: 375 x 667.
+Mobile: 360 x 720.
+iPhone X: 375 x 812.
+Pixel 2: 411 x 731.
+Tablet: 768 x 1024.
+Laptop: 1366 x 768.
+High-res laptop or desktop: 1920 x 1080.
+
+*/
+
 /* Pequenas telas */
 /* @media screen and (max-width: 600px) {
 } */
