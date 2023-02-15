@@ -37,7 +37,13 @@
       </p>
       <p>
         <label for="profissao">Profissão:</label>
-        <input type="text" name="profissao" id="profissao" list="listprof" />
+        <input
+          type="text"
+          name="profissao"
+          id="profissao"
+          list="listprof"
+          placeholder="--- Escolha ---"
+        />
         <!-- Para que apareçam as opções nesse input, é necessário definir um id à tag datalist e dentro do input, chamar o parâmetro list e passar o nome desse id em questão -->
         <datalist id="listprof">
           <!-- datalist também pode ser utilizado para capturar opções pré-definidas, porém nesse caso pode-se por exemplo, digitar novas opções e ainda assim enviar o formulário para o arquivo destino, já que o campo de input é um de tipo texto simples -->
