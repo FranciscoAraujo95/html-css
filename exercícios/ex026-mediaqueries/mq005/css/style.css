@@ -22,8 +22,23 @@ header h1 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.418);
 }
 
-nav {
+span#burguer {
+  background-color: rgb(19, 179, 13);
+  color: white;
   display: block;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+span#burguer:hover {
+  color: rgb(19, 179, 13);
+  background-color: white;
+  transition: 0.3s;
+}
+
+nav {
+  display: none;
 }
 
 nav ul {
